@@ -26,7 +26,8 @@ RUN apt-get --quiet install --yes --no-install-recommends \
       build-essential \
       ruby \
       ruby-dev \
-      vim-common
+      vim-common \
+      wget
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN locale-gen en_US.UTF-8
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
